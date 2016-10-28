@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+}
+header{
+    height: 800px;
+    color: #ffffff;
+    background: url("images/jewelery_01.png");
+    background-size: cover;
+    width: 100%;
+}
+.innerHeader, .innerContent, .innerFooter{
+    max-width: 940px;
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+}
+.logo{
+    text-transform: uppercase;
+    font: 24px Roboto;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 41px;
+}
+.mainNav{
+    font: 14px Roboto;
+    font-weight: 400;
+    display: inline-block;
+    word-spacing: 38px;
+    margin-left: 364px;
+}
+.mainNav>a{
+    text-decoration: none;
+    color: white;
+}
+.mainNav>a:hover{
+    color: #868686;
+}
+.headerPromo>h3{
+    font: 24px Roboto;
+    font-weight: 300;
+}
+.headerPromo>h1{
+    text-transform: uppercase;
+    font: 700 60px Roboto;
+    margin: 45px 0;
+}
+.headerPromo_buttons>button:first-child{
+    width: 165px;
+    height: 58px;
+    background: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+}
+.headerPromo_buttons>button:last-child{
+    width: 205px;
+    height: 58px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+}
+.headerPromo{
+    margin-top: 258px;
+}
+.headerPromo_buttons{
+    word-spacing: 26px;
+}
+.headerPromo_buttons>button{
+    word-spacing: 0;
+}
+.about>h2{
+    font: 700 48px Roboto;
+    text-transform: uppercase;
+    width: 300px;
+    display: inline-block;
+    color: #464646;
+    margin-right: 183px;
+}
+.about p{
+    font: 300 16px Roboto;
+    color: #b7b7b7;
+    margin-bottom: 46px;
+}
+.about>div {
+    width: 452px;
+    display: inline-block;
+    margin-top: 43px;
+}
+.item{
+    width: 255px;
+    display: inline-block;
+    word-spacing: normal;
+    line-height: normal;
+}
+.item>h3{
+    font: 700 18px Roboto;
+    color: #464646;
+}
+.item>p{
+    font: 300 16px Roboto;
+    color: #b7b7b7;
+}
+.howDoesItWork>h2{
+    font: 700 30px Roboto;
+    text-align: center;
+    color: #464646;
+}
+.howDoesItWork>img{
+    display: block;
+    margin: 20px auto 22px auto;
+}
+.howDoesItWork>p{
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+    font: 300 18px Roboto;
+    color: #b7b7b7;
+}
+.items{
+    word-spacing: 80px;
+    padding-top: 100px;
+    line-height: 160px;
+}
+.howDoesItWork{
+    height: 710px;
+    width: 100%;
+    padding-top: 157px;
+}
+.wrapper {
+    height: 350px;
+    position: relative;
+    width: 100%;
+}
+
+.slider {
+
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+}
+.wrapper > input {
+    display: none;
+}
+.wrapper .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+}
+
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+
+}
+
+.wrapper label:after {
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 12px;
+
+}
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1){
+    background: #ddd;
+}
+.slides {
+    height: inherit;
+
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.slide1>img,.slide1>div{
+    position: absolute;
+}
+.slide1>div{
+    width: 430px;
+    right: 70px;
+
+}
+.slide1>div>h2{
+    font: 700 30px Roboto;
+    margin-bottom: 15px;
+    color: #464646;
+}
+.slide1>div>img{
+    margin-bottom: 35px;
+}
+.slide1>div>p{
+
+    font: 300 18px Roboto;
+    color: #b7b7b7;
+    margin-bottom: 68px;
+}
+.slide1>div>button{
+    width: 165px;
+    height: 58px;
+    background: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+}
+.whyChooseWe{
+    height: 512px;
+    word-spacing: 160px;
+    overflow: hidden;
+}
+.whyChooseWe>h2{
+    width: 195px;
+    font: 700 48px Roboto;
+    color: #464646;
+    margin-top: 165px;
+}
+.whyChooseWeItems{
+    word-spacing: 96px;
+    width: 537px;
+    line-height: 7.4;
+    margin-top: 85px;
+}
+.whyChooseWeItem{
+    width: 217px;
+    word-spacing: normal;
+    overflow: hidden;
+    height: 132px;
+    display: inline-block;
+}
+.whyChooseWeItem>h3{
+    font: 700 18px Roboto;
+    color: #464646;
+    margin-bottom: 15px;
+}
+.whyChooseWeItem>p{
+    font: 300 16px Roboto;
+    color: #b7b7b7;
+}
+.ourJeweleryItem{
+    display: inline-block;
+    width: 49%;
+    overflow: hidden;
+}
+.ourJeweleryItem img{
+    width: 230px;
+}
+.ourJeweleryItems>h2{
+    display: inline-block;
+    font:700 48px Roboto;
+    text-transform: uppercase;
+    color: #464646;
+    width: 260px;
+    margin-left: 38px;
+    position: relative;
+    top: -73px;
+}
+.ourJeweleryItems>img{
+    position: relative;
+    top:-6px;
+    left: -258px;
+}
+.ourJewelery>p{
+    display: inline-block;
+    width: 425px;
+    font: 300 16px Roboto;
+    color: #b7b7b7;
+}
+.ourJeweleryP{
+    margin-right: 78px;
+}
+.commentsItem{
+     width: 290px;
+    display: inline-block;
+    vertical-align: top;
+    height: 185px;
+    word-spacing: normal;
+    margin-bottom: 65px;
+ }
+.comments>h2{
+    font: 700 30px Roboto;
+    color: #464646;
+    margin-top: 80px;
+    text-align: center;
+}
+.comments{
+    height: 880px;
+    width: 100%;
+}
+.comments>p{
+    font: 300 18px Roboto;
+    color: #b7b7b7;
+    width: 380px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 88px;
+}
+.comments>img{
+    display: block;
+    margin: 30px auto;
+}
+.commentsItems{
+    width: 100%;
+    word-spacing: 30px;
+}
+.commentsItem>div{
+    width: 233px;
+    display: inline-block;
+}
+.commentsItem>img{
+    vertical-align: top;
+    position: relative;
+    top:-10px;
+    margin-right: 15px;
+}
+.commentsItem>div>p{
+    font: 300 16px Roboto;
+    color: #b7b7b7;
+}
+.commentsItem>div>h3{
+    font: 700 18px Roboto;
+    color: #464646;
+}
+.commentsItem>div>p:first-of-type{
+    margin: 10px 0;
+}
+.photoblogItem{
+    width: 468px;
+    height: 235px;
+    display: inline-block;
+}
+.photoblogItem>img{
+    width: 234px;
+    height: auto;
+}
+.special{
+    vertical-align: top;
+}
+.special>h2{
+    font: 700 48px Roboto;
+    color: #464646;
+    text-transform: uppercase;
+    width: 270px;
+    margin: 54px 0 38px 0;
+}
+.special>img{
+    width: 67px;
+}
+.photoblog>p{
+    width: 425px;
+    font: 300 16px Roboto;
+    color: #b7b7b7;
+    display: inline-block;
+    line-height: 1.8;
+    margin-top: 44px;
+}
+.photoblog>p:first-of-type{
+    margin-right: 85px;
+}
+.footerNav{
+    width: 390px;
+    list-style: none;
+    height: 110px;
+    padding-left: 0;
+}
+.footerNav a{
+    color: #474747;
+    text-decoration: none;
+}
+.footerNav li{
+    width: 165px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.footerNav a:hover{
+    text-decoration: underline;
+}
+.footerLogo{
+    font: 700 24px Roboto;
+    color: white;
+    text-transform: uppercase;
+margin-bottom: 80px;
+}
+footer{
+    height: 340px;
+    width: 100%;
+    margin-top: 88px;
+    background: #141414;
+}
+.innerFooter>div{
+    padding-top: 80px;
+}
+.social{
+    background: url("images/23_03.png");
+    height: 23px;
+    width: 28px;
+    float: left;
+}
+.twitter{
+    background-position: -28px 0;
+}
+.smth{
+    background-position: -70px 0;
+}
+.google{
+    background-position: -112px 0;
+    width: 13px;
+}
+.facebook{
+    width: 16px;
+}
+.floatLeft{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.alignRight{
+    text-align: right;
+    margin-top: 70px;
+    color: #474747;
+    font: 300 16px Roboto;
+}
+.floatRight{
+    float: right;
+}
+/*620-800*/
+@media screen and (min-width: 620px) and (max-width: 860px){
+    .about>h2{
+        margin: 0 auto;
+        display: block;
+    }
+    .about>div{
+        margin: 43px auto 0;
+        display: block;
+    }
+    .items{
+        text-align: center;
+    }
+    .howDoesItWork{
+        height: 876px;
+    }
+    .ourJeweleryItem{
+        width: 100%;
+    }
+    .ourJeweleryItems{
+        text-align: center;
+    }
+    .ourJeweleryItems>h2{
+        position: static;
+    }
+    .ourJeweleryItems>img{
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+    .ourJewelery>p{
+        display: block;
+        margin: 15px auto 0;
+    }
+    .commentsItems{
+        text-align: center;
+    }
+    .commentsItem{
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .whyChooseWe{
+        width: 100%;
+        overflow: hidden;
+        height: 700px;
+    }
+    .whyChooseWe>h2{
+        float: none;
+    }
+    .whyChooseWe>.whyChooseWeItems{
+        float: none;
+        width: 100%;
+    }
+    .whyChooseWeItem{
+        display: block;
+        margin: 0 auto;
+    }
+}
